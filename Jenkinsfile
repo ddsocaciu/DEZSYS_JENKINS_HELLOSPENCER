@@ -61,7 +61,7 @@ pipeline {
         stage('Keep Alive') {
             steps {
                 // Keep the container running indefinitely
-                sh 'sleep infinity'
+                sh 'sleep 30'
             }
         }
     }
