@@ -13,7 +13,7 @@ pipeline {
         stage('Pre-Build Cleanup') {
             steps {
                 // Kill any existing Flask processes
-                sh 'pkill -f "python hello.py" || true'
+                sh 'pkill -f "python src/hello.py" || true'
             }
         }
         stage('Checkout') {
